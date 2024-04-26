@@ -1,0 +1,15 @@
+captainVersion: 4
+services:
+  $$cap_appname-evolutivo:
+    image: malik446644/evolutivo:latest
+    restart: always
+    volumes:
+      - $$cap_appname-evolutivo-cache:/var/www/html/cache
+caproverOneClickApp:
+  variables:
+  instructions:
+    start: evolutivo is a CRM in php
+    end: evolutivo is deployed successfully
+  displayName: Evolutivo
+  isOfficial: true
+  description: This will create an evolutivo only. You will need to create and configure the database information manually. Intended for advanced users.
